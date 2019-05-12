@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'ofont_ru_BebasNeue';
+    src: url('../fonts/ofont_ru_BebasNeue.eot');
+    src: url('../fonts/ofont_ru_BebasNeue.eot') format('embedded-opentype'),
+    url('../fonts/ofont_ru_BebasNeue.woff2') format('woff2'),
+    url('../fonts/ofont_ru_BebasNeue.woff') format('woff'),
+    url('../fonts/ofont_ru_BebasNeue.ttf') format('truetype'),
+    url('../fonts/ofont_ru_BebasNeue.svg#ofont_ru_BebasNeue') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: none;
+}
+
+body {
+    height: 100%;
+
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 25px 0 12px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+    position: absolute;
+    width: 100%
+}
+
+.container {
+    max-width: 1174px;
+    margin: auto;
+    position: relative;
+
+
+}
+
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header .logo {
+    float: left;
+}
+
+header .buttons {
+    display: inline-block;
+    line-height: 42px;
+    background-color: #fa090a;
+    min-width: 170px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 170px;
+    float: right;
+    margin-left: 26px;
+    border-radius: 3px;
+    margin-top: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+header .buttons:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+header .buttons i {
+    margin-right: 13px;
+    font-size: 17px;
+}
+
+header .buttons.login {
+    background-color: #464646;
+}
+
+header .buttons.online {
+    background-color: #252525;
+}
+
+header form {
+    max-width: 209px;
+    width: 100%;
+    height: 42px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #ebebeb;
+    float: right;
+    margin-top: 8px;
+}
+
+header form input {
+    height: 42px;
+    float: left;
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    padding-left: 17px;
+    font-size: 15px;
+    color: #959595;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+header form button {
+    float: right;
+    width: 19%;
+    text-align: center;
+    line-height: 42px;
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    color: #fa090a;
+}
+
+.container.border {
+    padding-bottom: 21px;
+    border-bottom: solid 2px #464646;
+    margin-bottom: 13px;
+}
+
+header form:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.soc {
+    display: inline-block;
+    line-height: 30px;
+    min-width: 30px;
+    background-color: #fa090a;
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    float: right;
+    text-align: center;
+}
+
+.soc.fb i {
+    display: block;
+    padding-top: 4px;
+    padding-left: 12px;
+    font-size: 26px;
+}
+
+.menu li {
+    color: #ebebeb;
+    display: inline-block;
+    /*padding: 0 5px 0;*/
+    font: 25px 'ofont_ru_BebasNeue';
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu li:after {
+    content: "";
+    display: block;
+    border-bottom: solid 3px #fa090a;
+    transition: width 0.3s ease-out;
+    width: 0;
+}
+
+.menu a {
+    padding: 0 5px 0;
+}
+
+.menu li:hover:after {
+    width: 100%;
+}
+
+.border {
+    position: relative;
+}
+
+.border h1 {
+    position: absolute;
+    font: 50px 'ofont_ru_BebasNeue';
+    color: white;
+    width: 100%;
+    text-align: center;
+    bottom: 22px;
+    text-transform: uppercase;
+    left: 0;
+    border-bottom: solid 4px #fa090a;
+    z-index: 4;
+}
+
+
+.buttons_email.subscribe {
+    max-width: 310px;
+    background-color: #ff0000;
+    color: white;
+    display: inline-block;
+}
+
+
+.grey {
+    background-color: #252525;
+    padding: 55px 0 65px;
+}
+
+footer .grey .left_side {
+    float: left;
+    display: inline-block;
+}
+
+
+.dropdovn {
+    display: none;
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    background-color: black;
+}
+
+.dropdovn li {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+header nav ul li:hover .dropdovn {
+    display: block;
+}
+
+footer .footer_black {
+    background-color: black;
+    padding: 75px 0 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .footer_black p {
+    color: white;
+    text-transform: uppercase;
+    line-height: 19px;
+    margin-bottom: 33px;
+
+}
+
+footer .footer_black form input {
+    max-width: 390px;
+    background-color: #ffffff;
+    line-height: 43px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 26px;
+    border: none;
+    font-size: 17px;
+}
+
+footer .footer_black form button {
+    max-width: 310px;
+    line-height: 51px;
+    background-color: #ff0000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    margin-left: 35px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+footer .grey {
+    background-color: #252525;
+    padding: 51px 0 66px;
+    border-top: solid 1px #464647;
+    border-bottom: solid 1px #464647;
+}
+
+footer .left-side .logo {
+    display: block;
+}
+
+footer .left-side .soc {
+    line-height: 43px;
+    min-width: 43px;
+    font-size: 30px;
+}
+
+footer .soc.fb i {
+    display: block;
+    padding-top: 7px;
+    padding-left: 12px;
+    font-size: 36px;
+}
+
+footer .left-side {
+    float: left;
+    display: inline-block;
+}
+
+footer .grey ul {
+    float: right;
+    list-style: none;
+    width: 100%;
+    max-width: 210px;
+}
+
+
+footer .grey ul li {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 33px;
+    font-family: 'Roboto', sans-serif;
+}

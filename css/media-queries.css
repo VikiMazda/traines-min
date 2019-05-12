@@ -1,0 +1,21 @@
+/*@media screen and (min-width: 480px) and (max-width: 1200px){*/
+
+/*}*/
+
+
+/*@media only screen and (max-width: 767px) {*/
+
+/*.left_block, .right_block {*/
+/*float: none;*/
+/*width: 100%;*/
+/*}*/
+/*}*/
+
+@media only screen and (max-width: 320px) {
+
+    section.container .video {
+        width: 270px;
+        height: 195px;
+        margin: 32px 0;
+    }
+}
